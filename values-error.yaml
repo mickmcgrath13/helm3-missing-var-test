@@ -1,0 +1,6 @@
+podRoleLabel: foo
+
+# Without this, helm will not output any templates
+# test:
+#   serviceAccount:
+#     enabled: true

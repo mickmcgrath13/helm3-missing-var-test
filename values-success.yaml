@@ -1,0 +1,4 @@
+podRoleLabel: bar
+test:
+  serviceAccount:
+    enabled: true
