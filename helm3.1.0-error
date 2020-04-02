@@ -1,0 +1,17 @@
+#!/bin/bash
+
+docker run \
+-ti \
+--rm \
+-v $(pwd):/apps \
+-v $KUBECONFIG:/root/.kube/config \
+-v ~/.helm:/root/.helm \
+alpine/helm:3.1.0 \
+upgrade \
+test \
+. \
+--install \
+--dry-run \
+--debug \
+--v="6" \
+-f values-error.yaml
